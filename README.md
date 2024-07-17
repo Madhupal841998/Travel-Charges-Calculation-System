@@ -31,5 +31,11 @@ Travel charges differ for a single trip and a return journey. When a passenger t
 
 If a senior citizen travels from New Delhi Railway Station to the Airport, the travel charge collected is ₹20. If the same citizen travels back to New Delhi Railway Station, the amount collected for the return journey is ₹10. If the same citizen travels a third time on the same day, it is treated as a new single journey, and the travel charge collected is ₹20.
 
+### Commands
+use node version  14.21
+install node modules
+run backend using node server.js
+run frontend using npm start
+
 ---
 
