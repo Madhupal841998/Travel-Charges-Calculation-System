@@ -77,11 +77,12 @@ app.post('/journey', (req, res) => {
 app.get('/summary/collection', (req, res) => {
   let totalCollected = 0;
   let totalDiscount = 0;
+  console.log(journeys);
 
   journeys.forEach(journey => {
     totalCollected += journey.charge;
     if (journey.isReturnJourney) {
-      totalDiscount += (charges[journey.ageGroup] - journey.charge);
+      totalDiscount += (2 *charges[journey.ageGroup] - journey.charge);
     }
   });
 
