@@ -21,7 +21,7 @@ Costs for the journey are based on the passenger's age and are categorized as fo
 |-----------------|-------------|
 | Kids            | 30          |
 | Adults          | 100         |
-| Senior Citizen  | 20          |
+| Senior Citizens | 20          |
 
 ## Return Journey Discount
 
@@ -31,5 +31,11 @@ Travel charges differ for a single trip and a return journey. When a passenger t
 
 If a senior citizen travels from New Delhi Railway Station to the Airport, the travel charge collected is ₹20. If the same citizen travels back to New Delhi Railway Station, the amount collected for the return journey is ₹10. If the same citizen travels a third time on the same day, it is treated as a new single journey, and the travel charge collected is ₹20.
 
----
+## Commands
 
+1. Use Node.js version 14.21
+2. Install node modules using `npm install`
+3. Run the backend using `node server.js`
+4. Run the frontend using `npm start`
+
+---
