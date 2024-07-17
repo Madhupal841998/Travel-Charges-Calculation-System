@@ -34,12 +34,13 @@ const calculateCharges = (ageGroup, isReturnJourney) => {
 app.post('/zerocard', (req, res) => {
   const { cardNumber, balance } = req.body;
 
-  if (zeroCards[cardNumber]) {
+  if (zeroCards[cardNumber] && zeroCards[cardNumber].balance !== 0) {
     return res.status(400).json({ error: 'ZeroCard already exists' });
   }
+  const msg = zeroCards[cardNumber].balance === 0 ? 'ZeroCard Balance Updated' : 'ZeroCard created';
 
   zeroCards[cardNumber] = { balance };
-  res.json({ message: 'ZeroCard created', cardNumber, balance });
+  res.json({ message: msg, cardNumber, balance });
 });
 
 // Check ZeroCard balance
